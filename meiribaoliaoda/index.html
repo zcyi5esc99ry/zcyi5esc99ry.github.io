@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日爆料大赛入口-参赛渠道与投稿规则</title>
+<meta name="description" content="每日爆料大赛入口汇总投稿通道、参赛细则与评审标准，整理每个赛段的主题命题、提交时间与作品公示方式，帮助投稿者找到合适赛道并避开常见退稿问题。">
+<meta name="keywords" content="每日爆料大赛入口">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a2b4a'/%3E%3Cpath d='M16 20h32v6H16zM16 31h20v5H16zM16 42h26v5H16z' fill='%23f5b93c'/%3E%3Ccircle cx='47' cy='44' r='7' fill='none' stroke='%23f5b93c' stroke-width='4'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1a2b4a;
+  --ink-soft:#3c4d6b;
+  --paper:#fbf8f2;
+  --card:#ffffff;
+  --line:#e2dcd0;
+  --line-strong:#c9c1b2;
+  --brand:#1a2b4a;
+  --brand-2:#2f4874;
+  --accent:#d9822b;
+  --accent-soft:#f5b93c;
+  --ok:#2f7d5c;
+  --warn:#a8442c;
+  --muted:#6f7787;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 4px rgba(26,43,74,.06),0 10px 24px -18px rgba(26,43,74,.35);
+  --shadow-lift:0 4px 10px rgba(26,43,74,.09),0 16px 32px -20px rgba(26,43,74,.4);
+  --fs-h1:clamp(1.75rem,1.2rem + 2.4vw,2.9rem);
+  --fs-h2:clamp(1.3rem,1.1rem + 1vw,1.65rem);
+  --fs-h3:1.1rem;
+  --fs-body:1rem;
+  --fs-sm:.88rem;
+  --fs-xs:.78rem;
+  --gap:clamp(1rem,.7rem + 1.2vw,1.6rem);
+  --wrap:1180px;
+  --header-h:112px;
+  --font:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  font-size:var(--fs-body);
+  line-height:1.75;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 420px at 85% -10%,rgba(245,185,60,.14),transparent 60%),
+    var(--paper);
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:3px solid var(--accent);outline-offset:2px;border-radius:4px;
+}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;letter-spacing:.01em}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+li{margin-bottom:.35em}
+.wrap{width:min(100% - 2rem,var(--wrap));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ---------- 吸顶区：公告条 + 页头 ---------- */
+.sticky-zone{
+  position:sticky;top:0;z-index:60;
+  background:rgba(251,248,242,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.notice{
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  color:#f3eee2;font-size:var(--fs-sm);
+}
+.notice .wrap{
+  display:flex;align-items:center;gap:.7rem;
+  min-height:40px;padding-block:.35rem;flex-wrap:wrap;
+}
+.notice .tag{
+  flex:none;background:var(--accent-soft);color:#3a2a08;
+  font-weight:700;font-size:var(--fs-xs);
+  padding:.1rem .5rem;border-radius:999px;letter-spacing:.04em;
+}
+.notice p{margin:0;min-width:0}
+.notice a{color:#ffe6b8;text-decoration:underline;text-underline-offset:3px}
+.site-header{padding-block:.5rem}
+.header-inner{display:flex;align-items:center;gap:var(--gap);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.65rem;flex:none}
+.brand svg{width:44px;height:44px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text strong{font-size:1.05rem;letter-spacing:.02em}
+.brand-text span{font-size:var(--fs-xs);color:var(--muted);letter-spacing:.08em}
+.main-nav{flex:1 1 auto;min-width:0}
+.nav-list{
+  list-style:none;display:flex;flex-wrap:wrap;gap:.15rem .1rem;
+  margin:0;padding:0;
+}
+.nav-list a{
+  display:block;padding:.4rem .6rem;border-radius:999px;
+  font-size:var(--fs-sm);color:var(--ink-soft);white-space:nowrap;
+}
+.nav-list a:hover{background:#efe9dc;text-decoration:none;color:var(--ink)}
+.nav-list a[aria-current="true"]{background:var(--brand);color:#fff}
+.header-tools{display:flex;align-items:center;gap:.5rem;flex:none;margin-left:auto}
+.search-form{display:flex;align-items:center;gap:.35rem}
+.search-form input[type="search"]{
+  width:11.5rem;max-width:42vw;padding:.42rem .7rem;font:inherit;font-size:var(--fs-sm);
+  border:1px solid var(--line-strong);border-radius:999px;background:#fff;color:var(--ink);
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.35rem;
+  font:inherit;font-size:var(--fs-sm);font-weight:600;cursor:pointer;
+  padding:.45rem .95rem;border-radius:999px;border:1px solid transparent;
+  transition:transform .15s ease,background-color .15s ease,box-shadow .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:#c2731f}
+.btn-ghost{background:#fff;border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{background:#f2ecdf}
+.menu-toggle{display:none;background:#fff;border:1px solid var(--line-strong);border-radius:8px;padding:.35rem .55rem;font:inherit;font-size:var(--fs-sm);color:var(--ink)}
+.search-feedback{
+  width:100%;font-size:var(--fs-xs);color:var(--warn);
+  margin:.15rem 0 0;display:none;
+}
+.search-feedback.is-open{display:block}
+
+/* ---------- 锚点偏移 ---------- */
+section[id],div[id].anchor-target{scroll-margin-top:calc(var(--header-h) + 12px)}
+
+/* ---------- 首屏 ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(1.6rem,1rem + 3vw,3rem)}
+.hero-grid{
+  display:grid;gap:var(--gap);
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  align-items:start;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-size:var(--fs-xs);letter-spacing:.14em;color:var(--accent);
+  font-weight:700;text-transform:uppercase;margin-bottom:.5rem;
+}
+.hero-kicker::before{content:"";width:26px;height:2px;background:var(--accent)}
+.hero h1{font-size:var(--fs-h1);letter-spacing:-.01em;margin-bottom:.7rem}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(245,185,60,.55) 62%)}
+.hero-lead{font-size:1.02rem;color:var(--ink-soft);max-width:46ch;margin-bottom:1.1rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.3rem}
+.hero-stats{
+  list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;
+  border-top:1px solid var(--line);padding-top:1rem;max-width:33rem;
+}
+.hero-stats li{margin:0}
+.hero-stats b{display:block;font-size:1.3rem;color:var(--brand);line-height:1.2}
+.hero-stats span{font-size:var(--fs-xs);color:var(--muted)}
+.hero-visual{
+  position:relative;background:var(--brand);border-radius:16px;
+  padding:1rem 1rem 1.1rem;color:#eee7d8;box-shadow:var(--shadow-lift);
+  overflow:hidden;
+}
+.hero-visual svg{width:100%;height:auto;display:block}
+.hero-visual figcaption{
+  font-size:var(--fs-xs);color:#c6cde0;margin-top:.6rem;
+  border-top:1px dashed rgba(255,255,255,.22);padding-top:.55rem;line-height:1.6;
+}
+.timeline-mini{list-style:none;margin:.7rem 0 0;padding:0;display:grid;gap:.4rem}
+.timeline-mini li{display:flex;gap:.55rem;font-size:var(--fs-sm);margin:0;align-items:baseline}
+.timeline-mini time{flex:none;font-variant-numeric:tabular-nums;color:var(--accent-soft);font-weight:700;font-size:var(--fs-xs)}
+
+/* ---------- 主布局：双栏 + 侧栏 ---------- */
+.layout{
+  display:grid;gap:var(--gap);
+  grid-template-columns:minmax(0,1fr) minmax(0,300px);
+  align-items:start;padding-block:var(--gap);
+}
+.main-col{min-width:0}
+.side-col{min-width:0;display:grid;gap:var(--gap);position:sticky;top:calc(var(--header-h) + 12px)}
+
+/* ---------- 通用板块 ---------- */
+.panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(1rem,.8rem + .8vw,1.5rem);margin-bottom:var(--gap);box-shadow:var(--shadow);
+}
+.panel > h2{
+  font-size:var(--fs-h2);margin-bottom:.35rem;
+  display:flex;align-items:baseline;gap:.55rem;flex-wrap:wrap;
+}
+.panel > h2 .num{
+  font-size:var(--fs-xs);color:var(--accent);font-weight:700;letter-spacing:.1em;
+  font-variant-numeric:tabular-nums;
+}
+.section-intro{color:var(--ink-soft);font-size:var(--fs-sm);margin-bottom:1rem;max-width:64ch}
+h3{font-size:var(--fs-h3);margin-bottom:.4rem}
+.meta{font-size:var(--fs-xs);color:var(--muted);display:flex;flex-wrap:wrap;gap:.4rem .7rem;margin-bottom:.4rem}
+.meta time{font-variant-numeric:tabular-nums}
+.pill{
+  display:inline-block;font-size:var(--fs-xs);padding:.1rem .5rem;border-radius:999px;
+  background:#f2ecdf;color:var(--ink-soft);border:1px solid var(--line);white-space:nowrap;
+}
+.pill-accent{background:#fdf0d8;border-color:#f0d6a4;color:#8a5a12}
+.pill-ok{background:#e8f3ed;border-color:#c4ddcf;color:#1f5c43}
+.pill-warn{background:#fbe9e3;border-color:#efc3b5;color:#8a3722}
+
+/* 网格卡片 */
+.card-grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:.9rem;display:flex;flex-direction:column;gap:.3rem;
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;
+}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--line-strong)}
+.card h3{font-size:1rem;margin:0}
+.card p{font-size:var(--fs-sm);color:var(--ink-soft);margin:0}
+.card .meta{margin-bottom:0}
+.card-foot{margin-top:auto;padding-top:.5rem;font-size:var(--fs-xs);color:var(--muted);display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tight-list li{
+  margin:0;padding:.6rem 0;border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:.6rem;align-items:baseline;
+}
+.tight-list .idx{font-size:var(--fs-xs);color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+.tight-list .title{font-weight:600}
+.tight-list .sub{display:block;font-weight:400;font-size:var(--fs-sm);color:var(--ink-soft)}
+.tight-list time{font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* 频道标签索引 */
+.channel-index{
+  display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));
+  list-style:none;margin:0;padding:0;
+}
+.channel-index li{margin:0}
+.channel-index a{
+  display:flex;justify-content:space-between;align-items:center;gap:.5rem;
+  padding:.5rem .7rem;border:1px solid var(--line);border-radius:var(--radius-sm);
+  background:#fff;font-size:var(--fs-sm);font-weight:600;color:var(--ink);
+}
+.channel-index a:hover{border-color:var(--accent);background:#fdf7ec;text-decoration:none}
+.channel-index a span{font-weight:400;font-size:var(--fs-xs);color:var(--muted);white-space:nowrap}
+
+/* 分栏正文 / 引语 */
+.feature-split{display:grid;gap:1rem;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.quote-card{
+  border-left:4px solid var(--accent);background:#fdf7ec;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:.8rem .95rem;font-size:var(--fs-sm);color:var(--ink-soft);
+}
+.quote-card cite{display:block;margin-top:.45rem;font-style:normal;font-size:var(--fs-xs);color:var(--muted)}
+
+/* 编号步骤 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:.8rem}
+.steps li{
+  counter-increment:s;margin:0;position:relative;padding-left:2.5rem;
+}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);
+  position:absolute;left:0;top:.05rem;
+  width:1.85rem;height:1.85rem;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:var(--fs-xs);font-weight:700;
+  display:grid;place-items:center;font-variant-numeric:tabular-nums;
+}
+.steps strong{display:block;margin-bottom:.15rem}
+.steps p{font-size:var(--fs-sm);color:var(--ink-soft);margin:0}
+
+/* 对照面板 */
+.compare{
+  width:100%;border-collapse:collapse;font-size:var(--fs-sm);
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+}
+.compare caption{text-align:left;font-size:var(--fs-sm);color:var(--muted);padding-bottom:.45rem}
+.compare th,.compare td{padding:.55rem .7rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.compare thead th{background:#f2ecdf;font-size:var(--fs-xs);letter-spacing:.05em;color:var(--ink-soft)}
+.compare tbody tr:last-child td{border-bottom:0}
+.compare td:first-child{font-weight:600;white-space:nowrap}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff;
+  padding:.55rem .85rem;margin-bottom:.55rem;
+}
+.faq summary{
+  cursor:pointer;font-weight:600;font-size:.97rem;list-style-position:outside;
+  padding:.1rem 0;
+}
+.faq summary::marker{color:var(--accent)}
+.faq details[open]{border-color:var(--line-strong);background:#fffdf8}
+.faq details p{font-size:var(--fs-sm);color:var(--ink-soft);margin:.6rem 0 .2rem}
+
+/* 评论 */
+.comments{display:grid;gap:.8rem}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:.75rem .9rem;background:#fff;
+}
+.comment header{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;align-items:baseline;margin-bottom:.25rem}
+.comment .who{font-weight:700;font-size:var(--fs-sm)}
+.comment .who span{font-weight:400;color:var(--muted);font-size:var(--fs-xs);margin-left:.35rem}
+.comment p{font-size:var(--fs-sm);margin:0;color:var(--ink-soft)}
+.comment .against{color:var(--warn)}
+
+/* 标签云 */
+.tag-cloud{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0}
+.tag-cloud li{margin:0}
+.tag-cloud a{
+  display:inline-block;font-size:var(--fs-xs);padding:.22rem .6rem;border-radius:999px;
+  background:#fff;border:1px solid var(--line-strong);color:var(--ink-soft);
+}
+.tag-cloud a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 1.1rem;border-left:2px solid var(--line-strong)}
+.timeline li{margin:0 0 .85rem;position:relative}
+.timeline li::before{
+  content:"";position:absolute;left:calc(-1.1rem - 5px);top:.5rem;
+  width:8px;height:8px;border-radius:50%;background:var(--accent);
+}
+.timeline time{display:block;font-size:var(--fs-xs);color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+.timeline p{font-size:var(--fs-sm);margin:.1rem 0 0;color:var(--ink-soft)}
+
+/* 侧栏卡片 */
+.side-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:1rem;box-shadow:var(--shadow);
+}
+.side-card h2{font-size:1rem;margin-bottom:.6rem;letter-spacing:.01em}
+.side-nav{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
+.side-nav li{margin:0}
+.side-nav a{
+  display:block;font-size:var(--fs-sm);padding:.34rem .55rem;border-radius:6px;
+  color:var(--ink-soft);border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#f5f0e5;text-decoration:none;color:var(--ink)}
+.side-nav a.is-active{background:#f2ecdf;border-left-color:var(--accent);color:var(--ink);font-weight:600}
+.notice-list{list-style:none;margin:0;padding:0;display:grid;gap:.5rem;font-size:var(--fs-sm)}
+.notice-list li{margin:0;padding-left:1rem;position:relative;color:var(--ink-soft)}
+.notice-list li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
+.notice-list time{font-size:var(--fs-xs);color:var(--muted);margin-right:.3rem;font-variant-numeric:tabular-nums}
+
+/* 深度解析 */
+.deep h3{margin-top:1.4rem}
+.deep h3:first-of-type{margin-top:.6rem}
+.deep p{color:var(--ink-soft)}
+.deep .claim{
+  background:#f6f2e8;border:1px solid var(--line-strong);border-left:5px solid var(--brand);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:.8rem .95rem;margin:1rem 0;
+  font-size:.97rem;
+}
+.deep .claim b{color:var(--brand)}
+.checklist{list-style:none;padding:0;margin:.6rem 0 1rem;display:grid;gap:.45rem}
+.checklist li{
+  margin:0;padding:.5rem .7rem;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-sm);font-size:var(--fs-sm);color:var(--ink-soft);
+}
+.checklist li b{color:var(--ink)}
+
+/* 页脚 */
+.site-footer{
+  margin-top:2rem;background:var(--brand);color:#d9dfec;padding-block:2rem 1.4rem;
+  border-top:4px solid var(--accent);
+}
+.footer-grid{display:grid;gap:1.4rem;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr))}
+.site-footer h2,.site-footer h3{color:#fff;font-size:.95rem;margin-bottom:.55rem;letter-spacing:.03em}
+.site-footer .footer-brand{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem}
+.site-footer .footer-brand svg{width:38px;height:38px;flex:none}
+.site-footer .footer-brand strong{color:#fff;font-size:1.02rem}
+.site-footer p{font-size:var(--fs-sm);color:#c3cbdc;margin-bottom:.5em}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.3rem}
+.site-footer ul a{color:#d9dfec;font-size:var(--fs-sm)}
+.site-footer ul a:hover{color:#fff}
+.footer-bottom{
+  margin-top:1.4rem;padding-top:.9rem;border-top:1px solid rgba(255,255,255,.16);
+  font-size:var(--fs-xs);color:#aab5cb;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;justify-content:space-between;
+}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:1rem;bottom:1rem;z-index:70;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);
+  background:#fff;color:var(--brand);font-size:1.1rem;cursor:pointer;
+  box-shadow:var(--shadow-lift);display:none;place-items:center;
+}
+.to-top.is-visible{display:grid}
+.to-top:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* 搜索过滤状态 */
+.is-hidden{display:none !important}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side-col{position:static;grid-row:auto;order:2}
+  .main-col{order:1}
+  .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .feature-split{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  :root{--header-h:158px}
+  .menu-toggle{display:inline-flex}
+  .header-inner{gap:.5rem}
+  .main-nav{order:3;flex-basis:100%;display:none}
+  .main-nav.is-open{display:block}
+  .nav-list{gap:.1rem}
+  .nav-list a{padding:.35rem .5rem}
+  .header-tools{order:2;margin-left:auto}
+  .search-form input[type="search"]{width:9.5rem}
+  .hero-stats{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  .footer-grid{grid-template-columns:minmax(0,1fr)}
+  .tight-list li{grid-template-columns:auto minmax(0,1fr);gap:.2rem .6rem}
+  .tight-list time{grid-column:2;text-align:left}
+  .hero-visual{padding:.8rem}
+  .to-top{right:.7rem;bottom:.7rem}
+}
+@media (max-width:400px){
+  .wrap{width:min(100% - 1.2rem,var(--wrap))}
+  .brand-text strong{font-size:.95rem}
+  .hero-actions .btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"每日爆料大赛入口",
+  "inLanguage":"zh-CN",
+  "description":"每日爆料大赛入口的赛段投稿通道、比赛规则与评审标准查询页。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"每日爆料大赛入口在哪里提交第一条爆料？",
+      "acceptedAnswer":{"@type":"Answer","text":"在比赛页选择命题赛道后进入投稿表单，填写事件发生时间、地点、可核验材料与两位知情人联系方式，系统生成七位投稿编号，凭编号在个人中心追踪状态。"}
+    },
+    {
+      "@type":"Question",
+      "name":"爆料素材需要保留原始文件吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"需要。评审组在初筛与公示阶段会核对录音、截图、票据的原始时间戳，二次转存文件通常无法通过溯源核验，建议保留设备原文件并在投稿时注明拍摄设备型号。"}
+    },
+    {
+      "@type":"Question",
+      "name":"同一事件多人投稿算重复吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"只要新增了关键信息层就不算。核验组按时间线、证据链、当事人回应三层拆分，补充任一层的新事实会被标注为增量投稿，单纯复述他人已提交内容则计入重复池。"}
+    },
+    {
+      "@type":"Question",
+      "name":"赛道主题与身边线索不匹配怎么办？",
+      "acceptedAnswer":{"@type":"Answer","text":"先看待定池与自由命题赛道。自由命题每周开放四十个名额，允许跨类别提交，但需在选题说明里写清与当期三大命题的差异点，避免与主赛道作品重复评审。"}
+    },
+    {
+      "@type":"Question",
+      "name":"评审公示后还能补充材料吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"公示期为三天，期间可在投稿编号下追加材料并标注补充轮次，评审组会在公示结束前给出是否影响结论的书面说明，超过公示期提交的材料不进入当期评分。"}
+    }
+  ]
+}
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-zone">
+  <div class="notice" role="region" aria-label="赛程公告">
+    <div class="wrap">
+      <span class="tag">赛程</span>
+      <p>第 27 期命题「城中村改造补偿公示」今日 10:00 开闸，投稿窗口 72 小时；<a href="/#latest">查看本期新增 3 条退稿说明</a></p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#top" aria-label="每日爆料大赛入口 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1a2b4a"/>
+          <path d="M15 19h34v7H15z" fill="#f5b93c"/>
+          <path d="M15 31h21v5H15z" fill="#e8dfc9"/>
+          <path d="M15 41h27v5H15z" fill="#e8dfc9"/>
+          <circle cx="47" cy="45" r="7.5" fill="none" stroke="#f5b93c" stroke-width="4"/>
+          <path d="M52.5 50.5l6 6" stroke="#f5b93c" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <strong>每日爆料大赛入口</strong>
+          <span>赛段投稿 · 规则查询</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="mainNav">
+        菜单
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul class="nav-list">
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#picked">本期精选</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">频道入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">投稿指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">投稿者说</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">赛段榜单</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <form class="search-form" role="search" id="searchForm">
+          <label class="sr-only" for="q">搜索赛段或条目</label>
+          <input type="search" id="q" name="q" placeholder="搜赛道、条目、编号" autocomplete="off">
+          <button class="btn btn-ghost" type="submit">查找</button>
+        </form>
+      </div>
+      <p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <!-- 主题首屏 -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker">第 27 期 · 命题赛道开放中</p>
+        <h1 id="hero-title">每日爆料大赛入口：<em>找对赛道，再动笔</em></h1>
+        <p class="hero-lead">三个当期命题、两个长期命题和一个自由命题，对应六套评审表。每份投稿从提交到公示平均 4 天，退稿会给出具体条目编号和一句话理由，而不是一句“不符合要求”。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#channels">查看六个赛道</a>
+          <a class="btn btn-ghost" href="/#guide">对照投稿材料清单</a>
+        </div>
+        <ul class="hero-stats">
+          <li><b>6</b><span>当期赛道</span></li>
+          <li><b>72h</b><span>本期投稿窗口</span></li>
+          <li><b>4,861</b><span>历期有效投稿数</span></li>
+        </ul>
+      </div>
+      <figure class="hero-visual">
+        <svg viewBox="0 0 320 190" role="img" aria-label="投稿流程示意图：选择赛道、提交材料、核验溯源、公示评分四个阶段">
+          <rect x="0" y="0" width="320" height="190" rx="12" fill="#22375c"/>
+          <path d="M24 44h74v14H24z" fill="#f5b93c" opacity=".9"/>
+          <path d="M24 68h52v8H24z" fill="#8fa2c4"/>
+          <path d="M24 84h64v8H24z" fill="#8fa2c4"/>
+          <text x="24" y="30" fill="#e8dfc9" font-size="11" font-family="sans-serif">投稿路径</text>
+          <g stroke="#f5b93c" stroke-width="2" fill="none">
+            <path d="M128 62h30l10 14h34l10-14h34l10 14h34"/>
+          </g>
+          <g fill="#f5b93c">
+            <circle cx="128" cy="62" r="5"/>
+            <circle cx="202" cy="76" r="5"/>
+            <circle cx="276" cy="62" r="5"/>
+          </g>
+          <text x="112" y="118" fill="#e8dfc9" font-size="10" font-family="sans-serif">赛道</text>
+          <text x="186" y="118" fill="#e8dfc9" font-size="10" font-family="sans-serif">核验</text>
+          <text x="260" y="118" fill="#e8dfc9" font-size="10" font-family="sans-serif">公示</text>
+          <rect x="24" y="134" width="272" height="34" rx="8" fill="#1a2b4a" stroke="#3c5a8c"/>
+          <text x="36" y="156" fill="#c6cde0" font-size="11" font-family="sans-serif">编号 · 分段理由 · 可补充轮次</text>
+        </svg>
+        <figcaption>本期三条命题窗口：11 月 8 日 10:00 至 11 月 11 日 10:00，逾期转入下期待定池。</figcaption>
+        <ol class="timeline-mini">
+          <li><time datetime="2026-11-08">11-08</time><span>命题开闸，同步公布评审表</span></li>
+          <li><time datetime="2026-11-10">11-10</time><span>首轮退稿反馈下发</span></li>
+          <li><time datetime="2026-11-11">11-11</time><span>窗口关闭，转入核验</span></li>
+        </ol>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 1 领域概览 -->
+      <section class="panel" id="overview" aria-labelledby="h-overview">
+        <h2 id="h-overview"><span class="num">01</span>赛事概览：命题机制与评审分工</h2>
+        <p class="section-intro">投稿者最常见的误解，是把比赛当成一次自由投稿。实际流程是先定命题、再按赛道拆评审表，最后由核验组统一做溯源。</p>
+        <div class="feature-split">
+          <div>
+            <p>第 27 期的三个命题分别落在城中村改造补偿公示、县域医院药品集采到货记录、社区食堂承包招标。每个命题配两名初审、一名核验员和一名复核编辑，评审表在开闸当天公布，投稿者可以提前看到评分维度：事实完整度 30 分、材料可溯源 25 分、公共价值 25 分、文本可读性 20 分。</p>
+            <p>长期命题「校门口的收费」与「夜班通勤」不设窗口，全年接收，但每两周集中审一轮。自由命题留给线索无法归入上述五类的情况，每周开放四十个名额，抢满即止。</p>
+          </div>
+          <div>
+            <p>核验组的职责范围常被低估。他们不评判选题是否好看，只做三件事：比对原始文件时间戳、回拨投稿人填写的知情人电话、检索公开记录里是否已有同源信息。任何一项不通，初审分数会被直接拦下。</p>
+            <p>所有投稿统一使用七位编号，前两位是期次，后五位是流水号。编号在提交成功页出现，也在短信里再发一次，丢失后只能用绑定手机号在个人中心找回。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="panel" id="picked" aria-labelledby="h-picked">
+        <h2 id="h-picked"><span class="num">02</span>本期精选：三条被反复引用的投稿</h2>
+        <p class="section-intro">以下三条来自第 26 期公示作品，选择标准是核验记录完整、可当范本参考，而非阅读量。</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="meta"><span class="pill pill-ok">核验通过</span><time datetime="2026-11-06">11-06 公示</time></div>
+            <h3>片区改造签约表上的 37 户缺号</h3>
+            <p>投稿人比对两版签约公示表，发现第三页存在连续七个编号跳号，附上社区张贴照片的原图与拍摄设备信息。</p>
+            <div class="card-foot"><span>编号 2603118</span><span>评分 88</span></div>
+          </article>
+          <article class="card">
+            <div class="meta"><span class="pill pill-ok">核验通过</span><time datetime="2026-11-05">11-05 公示</time></div>
+            <h3>卫生院采购单的到货日期倒挂</h3>
+            <p>到货记录写着 9 月 28 日，随货单却是 10 月 9 日开票。投稿人保留了纸质单据的折痕比对照片，核验员回拨药房值班表确认。</p>
+            <div class="card-foot"><span>编号 2603087</span><span>评分 85</span></div>
+          </article>
+          <article class="card">
+            <div class="meta"><span class="pill pill-accent">增量投稿</span><time datetime="2026-11-07">11-07 公示</time></div>
+            <h3>食堂承包招标的第二次流标说明</h3>
+            <p>在已有投稿基础上补入流标公告的张贴位置与两名投标人的报价区间，被标注为增量，计入当期总分但不重复占名额。</p>
+            <div class="card-foot"><span>编号 2603102</span><span>评分 79</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="panel" id="latest" aria-labelledby="h-latest">
+        <h2 id="h-latest"><span class="num">03</span>最新更新：规则与条目变动</h2>
+        <p class="section-intro">近三天的调整集中在投稿入口和退稿说明，条目名之后是对应改动，不涉及评分权重的变化。</p>
+        <ul class="tight-list">
+          <li>
+            <span class="idx">01</span>
+            <span class="title">投稿表单新增素材指纹栏
+              <span class="sub">要求填写拍摄设备型号与原文件大小，未填不影响提交，但会推迟核验排期。</span>
+            </span>
+            <time datetime="2026-11-08">今天 09:20</time>
+          </li>
+          <li>
+            <span class="idx">02</span>
+            <span class="title">退稿说明模板改版
+              <span class="sub">由一句话结论改为「触发条款 + 具体位置 + 可补充轮次」，第 26 期起回溯套用。</span>
+            </span>
+            <time datetime="2026-11-07">昨天 16:40</time>
+          </li>
+          <li>
+            <span class="idx">03</span>
+            <span class="title">自由命题名额由每周 30 个提高到 40 个
+              <span class="sub">11 月 8 日 00:00 起生效，已占名额不释放，仍需在选题说明中标注与主命题的差异。</span>
+            </span>
+            <time datetime="2026-11-08">今天 00:00</time>
+          </li>
+          <li>
+            <span class="idx">04</span>
+            <span class="title">「校门口的收费」长期命题暂停收稿两天
+              <span class="sub">11 月 9 日至 10 日做历史稿件归档，期间提交会进入待定池而非拒稿。</span>
+            </span>
+            <time datetime="2026-11-07">昨天 11:05</time>
+          </li>
+          <li>
+            <span class="idx">05</span>
+            <span class="title">核验组新增回拨记录留痕
+              <span class="sub">每通电话记录通话时长与对方身份栏位，投稿人可在编号页申请查看脱敏版本。</span>
+            </span>
+            <time datetime="2026-11-06">11-06 14:30</time>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="panel" id="channels" aria-labelledby="h-channels">
+        <h2 id="h-channels"><span class="num">04</span>频道入口：六个赛道的投稿范围</h2>
+        <p class="section-intro">频道名按投稿者实际搜索的说法确定，点开后是当期命题的细则页。加粗数字为该频道累计有效投稿数。</p>
+        <ul class="channel-index">
+          <li><a href="/#deep">城中村改造补偿公示<span>1,204 条</span></a></li>
+          <li><a href="/#guide">县域医院药品集采<span>886 条</span></a></li>
+          <li><a href="/#latest">社区食堂承包招标<span>512 条</span></a></li>
+          <li><a href="/#faq">校门口的收费<span>1,377 条</span></a></li>
+          <li><a href="/#reviews">夜班通勤观察<span>623 条</span></a></li>
+          <li><a href="/#rank">自由命题待定池<span>259 条</span></a></li>
+        </ul>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="panel deep" id="deep" aria-labelledby="h-deep">
+        <h2 id="h-deep"><span class="num">05</span>深度解析：退稿主因在材料，不在选题</h2>
+        <p class="section-intro">把第 24 至 26 期共 1,186 份退稿按触发条款归类后，得到一组不太符合直觉的分布。</p>
+
+        <p>第 24 期到第 26 期，退稿总数 1,186 份。按核验组公布的触发条款拆分，材料可溯源不足占 41%，事实完整度不足占 27%，与既有投稿重复占 19%，文本可读性不足只占 8%，其余 5% 是选题范围外。选题被判“不够重要”的，只有 4 份。这组数字说明退稿的主因在材料环节。</p>
+
+        <div class="claim">
+          <b>可被反驳的判断：</b>对初次投稿者来说，把同一件事多拍两张带时间信息的环境照片，比换一个更抓眼的选题更能提高通过率。理由来自第二十五期的对照——同一命题下，附加环境照片的 214 份投稿核验通过率为 63%，未附加的 291 份为 34%。
+        </div>
+
+        <h3>案例时间线：一份被退回两次的签约表投稿</h3>
+        <ul class="timeline">
+          <li><time datetime="2026-10-21">10-21</time><p>投稿人首次提交，仅有签约表正面截图，未含张贴位置与日期，触发「材料不可溯源」条款，编号 2602145。</p></li>
+          <li><time datetime="2026-10-24">10-24</time><p>补充拍摄时的周边参照物与另一位居民口述，核验员回拨确认，但缺号段落仍无法校对，第二次退回。</p></li>
+          <li><time datetime="2026-10-29">10-29</time><p>补入社区公告栏另一版张贴件，两版对照后确认 37 户缺号成立，进入公示，评分 71。</p></li>
+        </ul>
+        <p>这份投稿的选题从第一次提交起就没有变，变的是材料的可核对程度。三次提交的文本长度相差不大，最终得分差出 26 分。</p>
+
+        <h3>说法差异：投稿人与核验组对「原始文件」的理解</h3>
+        <p>在 11 月 3 日的投稿者答疑里，争论集中在转存文件算不算原始材料。投稿人的普遍理解是“内容一致即可”，核验组的口径是“时间戳与设备信息必须能对上”。两方说法都有记录：答疑记录第 12 条写的是“以首次生成文件为准”，第 17 条又写明“经公证的转存件可单独申请复核”。</p>
+        <p>按目前执行情况看，后一条是例外通道，需要额外提交书面说明，处理周期比常规核验多两到三天。第二十六期只有 3 份投稿走了这条通道，其中 2 份通过。</p>
+
+        <h3>规则前后变化：退稿说明的颗粒度</h3>
+        <table class="compare">
+          <caption>第 25 期与第 26 期退稿说明字段对照</caption>
+          <thead>
+            <tr><th scope="col">字段</th><th scope="col">第 25 期</th><th scope="col">第 26 期起</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>结论</td><td>一句话结论</td><td>结论 + 触发条款编号</td></tr>
+            <tr><td>位置</td><td>无</td><td>标注具体页、段、时间点</td></tr>
+            <tr><td>后续</td><td>无</td><td>写明可补充轮次与截止日</td></tr>
+            <tr><td>申诉</td><td>邮件申请，平均 6 天回复</td><td>编号页内发起，平均 2 天回复</td></tr>
+          </tbody>
+        </table>
+        <p>颗粒度变细的直接后果是申诉量下降。第 25 期申诉 87 件，第 26 期 31 件，同期退稿总数只减少 22 份。能看懂为什么被退，比被退本身更影响投稿人的下一步动作。</p>
+
+        <h3>可核对结构：一份投稿能否过初筛的四个检查项</h3>
+        <ul class="checklist">
+          <li><b>时间对得上：</b>文件生成时间与事件发生时间差不超过 48 小时，超出需说明原因。</li>
+          <li><b>地点对得上：</b>截图或照片里能定位到具体门牌、楼层或公告栏编号。</li>
+          <li><b>人能对得上：</b>至少一位知情人可回拨，且其身份与事件位置有关联。</li>
+          <li><b>链条对得上：</b>同一事件的两份材料之间没有缺环，例如有招标公告却无投标记录。</li>
+        </ul>
+        <p>四项里任何一项判“待补”，投稿不会被直接退，而是进入待定池，排期通常延后三到五天。第二十六期待定池共 143 份，最终有 61 份补正后进入公示。</p>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="panel" id="guide" aria-labelledby="h-guide">
+        <h2 id="h-guide"><span class="num">06</span>投稿体验指南：从注册到编号的六步</h2>
+        <p class="section-intro">按实际操作顺序排列，第三步和第五步最容易卡住，括号里是常见耗时。</p>
+        <ol class="steps">
+          <li><strong>确认当期命题</strong><p>开闸当天看命题页，先判断线索属于哪个赛道。无法归类再考虑自由命题，不要为了赶窗口硬塞。（约 10 分钟）</p></li>
+          <li><strong>整理材料清单</strong><p>原始文件放一处，另存一份带设备信息的截图。录音要截出时长与录制时间，票据拍全四角。（约 40 分钟）</p></li>
+          <li><strong>填写事件时间线</strong><p>按日期逐条写，每条一句话，标注来源是文件、口述还是公开记录。这是核验组最先看的部分。（约 20 分钟）</p></li>
+          <li><strong>填写知情人信息</strong><p>姓名可填化名，但联系方式必须可回拨。留两位比留一位稳，其中一位最好不是投稿人本人。</p></li>
+          <li><strong>核对素材指纹</strong><p>设备型号、原文件大小、拍摄日期三项要与文件属性一致，填错会触发人工复核，多等两天。</p></li>
+          <li><strong>提交并保存编号</strong><p>七位编号会出现在成功页与短信里。编号页可追加材料，公示结束前都能补。</p></li>
+        </ol>
+        <div class="quote-card">
+          第二十六期一位投稿人在编号页留言：第一次提交只写了三行说明，退稿理由指到第二段缺时间点；补上日期与门牌号后，同一份材料在第四天进了公示。
+          <cite>—— 编号 2602901 投稿人，11 月 4 日</cite>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="panel faq" id="faq" aria-labelledby="h-faq">
+        <h2 id="h-faq"><span class="num">07</span>常见问题</h2>
+        <p class="section-intro">问题来自 11 月 3 日答疑记录整理，答案按当前执行口径编写。</p>
+        <details>
+          <summary>每日爆料大赛入口在哪里提交第一条爆料？</summary>
+          <p>在比赛页选择命题赛道后进入投稿表单，填写事件发生时间、地点、可核验材料与两位知情人联系方式，系统生成七位投稿编号，凭编号在个人中心追踪状态。</p>
+        </details>
+        <details>
+          <summary>爆料素材需要保留原始文件吗？</summary>
+          <p>需要。评审组在初筛与公示阶段会核对录音、截图、票据的原始时间戳，二次转存文件通常无法通过溯源核验，建议保留设备原文件并在投稿时注明拍摄设备型号。</p>
+        </details>
+        <details>
+          <summary>同一事件多人投稿算重复吗？</summary>
+          <p>只要新增了关键信息层就不算。核验组按时间线、证据链、当事人回应三层拆分，补充任一层的新事实会被标注为增量投稿，单纯复述他人已提交内容则计入重复池。</p>
+        </details>
+        <details>
+          <summary>赛道主题与身边线索不匹配怎么办？</summary>
+          <p>先看待定池与自由命题赛道。自由命题每周开放四十个名额，允许跨类别提交，但需在选题说明里写清与当期三大命题的差异点，避免与主赛道作品重复评审。</p>
+        </details>
+        <details>
+          <summary>评审公示后还能补充材料吗？</summary>
+          <p>公示期为三天，期间可在投稿编号下追加材料并标注补充轮次，评审组会在公示结束前给出是否影响结论的书面说明，超过公示期提交的材料不进入当期评分。</p>
+        </details>
+        <details>
+          <summary>退稿后同一线索还能再投吗？</summary>
+          <p>可以在下一期重新提交，但需在说明里附上上一期的编号与补正内容。连续两期以相同材料提交且无补正的，系统会标注为搁置，不再进入初审排期。</p>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="panel" id="reviews" aria-labelledby="h-reviews">
+        <h2 id="h-reviews"><span class="num">08</span>投稿者说：六条不同立场的留言</h2>
+        <p class="section-intro">选取标准是内容具体，包含对条目本身或流程细节的评价，语气不做统一处理。</p>
+        <div class="comments">
+          <article class="comment">
+            <header><span class="who">老周 <span>编号 2602145</span></span><time datetime="2026-11-07">11-07</time></header>
+            <p>同一份签约表，第三次才过。前两次退稿理由写得挺准，第一次说缺张贴位置，第二次说缺号段落对不上，照着补就行。就是等核验排期花了八天，比写材料还久。</p>
+          </article>
+          <article class="comment">
+            <header><span class="who">林间 <span>编号 2603087</span></span><time datetime="2026-11-06">11-06</time></header>
+            <p>药品集采那条我核了三遍票据折痕，投稿里写了比对方法。评分 85，公示后有人问能不能看出开票日期，其实原图放大到 200% 能看清，只是字小。</p>
+          </article>
+          <article class="comment">
+            <header><span class="who">阿禾 <span>自由命题</span></span><time datetime="2026-11-05">11-05</time></header>
+            <p>自由命题名额从 30 提到 40 对我有用，上次 11 点开抢，10 点 47 分就满了。不过选题说明那栏还是只给 200 字，写差异点有点挤。</p>
+          </article>
+          <article class="comment">
+            <header><span class="who">陈默 <span>编号 2603102</span></span><time datetime="2026-11-07">11-07</time></header>
+            <p class="against">增量投稿的标注标准我觉得模糊。我补的是两名投标人的报价区间，被判增量；另一个人只补了一张公告栏远景，也进了公示。核验记录里没写清差别在哪。</p>
+          </article>
+          <article class="comment">
+            <header><span class="who">夜班小陆 <span>长期命题</span></span><time datetime="2026-11-04">11-04</time></header>
+            <p>夜班通勤这个命题审得慢，两周一轮，我十月下旬投的还没消息。规则页写的就是两周集中审，这个倒没意见，只是希望能看到排队位置。</p>
+          </article>
+          <article class="comment">
+            <header><span class="who">槐树巷 <span>编号 2603118</span></span><time datetime="2026-11-06">11-06</time></header>
+            <p>37 户缺号那份是我投的。核验员回拨了两位居民，通完电话第二天状态就变了。建议后来者把同一条街的两处张贴件都拍下来，单张截图真的不够用。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="panel" id="news" aria-labelledby="h-news">
+        <h2 id="h-news"><span class="num">09</span>相关资讯：细则、公示与归档</h2>
+        <p class="section-intro">围绕第 27 期开闸前后发生的具体动作，按时间倒序排列。</p>
+        <ul class="tight-list">
+          <li>
+            <span class="idx">A</span>
+            <span class="title">第 27 期评审表上线，评分维度未变
+              <span class="sub">事实完整度 30、材料可溯源 25、公共价值 25、文本可读性 20，复核编辑新增一人。</span>
+            </span>
+            <time datetime="2026-11-08">今天</time>
+          </li>
+          <li>
+            <span class="idx">B</span>
+            <span class="title">第 26 期三份公示作品的核验记录脱敏公开
+              <span class="sub">含通话时长、回拨对象身份栏位与材料比对结论，可作范本对照。</span>
+            </span>
+            <time datetime="2026-11-06">11-06</time>
+          </li>
+          <li>
+            <span class="idx">C</span>
+            <span class="title">自由命题待定池清空移交
+              <span class="sub">259 条线索中 187 条转入第 27 期评分序列，其余退回投稿人邮箱。</span>
+            </span>
+            <time datetime="2026-11-05">11-05</time>
+          </li>
+          <li>
+            <span class="idx">D</span>
+            <span class="title">历史稿件归档说明更新
+              <span class="sub">第 1 至 12 期的投稿编号规则与现行不同，查旧稿需按期次检索。</span>
+            </span>
+            <time datetime="2026-11-03">11-03</time>
+          </li>
+          <li>
+            <span class="idx">E</span>
+            <span class="title">答疑记录第 12 与第 17 条的口径差异被讨论
+              <span class="sub">原始文件与公证转存件两条说法并存，执行上以后者为例外通道。</span>
+            </span>
+            <time datetime="2026-11-03">11-03</time>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="panel" id="related" aria-labelledby="h-related">
+        <h2 id="h-related"><span class="num">10</span>相关推荐：按投稿场景找入口</h2>
+        <p class="section-intro">标签直接对应投稿时会搜的说法，点击跳到对应板块。</p>
+        <ul class="tag-cloud">
+          <li><a href="/#guide">投稿材料清单下载</a></li>
+          <li><a href="/#deep">退稿条款逐条对照</a></li>
+          <li><a href="/#channels">城中村改造补偿公示细则</a></li>
+          <li><a href="/#channels">县域医院药品集采投稿范围</a></li>
+          <li><a href="/#faq">增量投稿怎么标注</a></li>
+          <li><a href="/#faq">原始文件时间戳要求</a></li>
+          <li><a href="/#latest">自由命题名额变化</a></li>
+          <li><a href="/#rank">赛段榜单评分拆分</a></li>
+          <li><a href="/#reviews">投稿人真实反馈</a></li>
+          <li><a href="/#news">公示作品核验记录</a></li>
+        </ul>
+      </section>
+
+      <!-- 11 赛段榜单 -->
+      <section class="panel" id="rank" aria-labelledby="h-rank">
+        <h2 id="h-rank"><span class="num">11</span>赛段榜单：第 26 期评分前五</h2>
+        <p class="section-intro">按总分降序，括号内是四个维度的得分拆分，用于对照自己的材料短板。</p>
+        <table class="compare">
+          <caption>第 26 期公示作品评分拆分（事实 / 溯源 / 公共价值 / 可读性）</caption>
+          <thead>
+            <tr><th scope="col">名次</th><th scope="col">作品与编号</th><th scope="col">拆分</th><th scope="col">总分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>签约表 37 户缺号 · 2603118</td><td>28 / 23 / 22 / 15</td><td>88</td></tr>
+            <tr><td>2</td><td>采购单到货日期倒挂 · 2603087</td><td>26 / 24 / 20 / 15</td><td>85</td></tr>
+            <tr><td>3</td><td>食堂招标二次流标说明 · 2603102</td><td>24 / 20 / 21 / 14</td><td>79</td></tr>
+            <tr><td>4</td><td>校门口代收费名目清理 · 2602964</td><td>23 / 21 / 19 / 13</td><td>76</td></tr>
+            <tr><td>5</td><td>夜班公交末班时间调整 · 2602911</td><td>22 / 20 / 18 / 12</td><td>72</td></tr>
+          </tbody>
+        </table>
+        <p>第五名的可读性只拿 12 分，文本被复核编辑标了两处时间线跳跃。它的材料溯源分不低，说明分数差异主要落在叙述组织上。</p>
+      </section>
+
+      <!-- 12 创作者证言 -->
+      <section class="panel" id="voices" aria-labelledby="h-voices">
+        <h2 id="h-voices"><span class="num">12</span>创作者证言：三位长期投稿人的方法</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>把线索先写成三行时间线，再决定投哪个赛道</h3>
+            <p>一位连续投稿 14 期的居民说，她习惯先在手机备忘录写三行：哪天、在哪、谁受影响。三行写不全就先不投，因为核验组最先卡的就是这三项。</p>
+            <div class="card-foot"><span>投稿 14 期</span><span>通过 9 份</span></div>
+          </article>
+          <article class="card">
+            <h3>录音先截时长，再转文字</h3>
+            <p>另一位做夜班通勤选题的投稿人，会先截出录音时长与录制时间放在材料首屏，再附文字稿。他的理由是核验员不需要听完全程就能判断这份材料值不值得排期。</p>
+            <div class="card-foot"><span>长期命题</span><span>待审 2 份</span></div>
+          </article>
+          <article class="card">
+            <h3>退稿理由当成修改清单</h3>
+            <p>第三位投稿人把每期退稿说明抄在表格里，按触发条款排序。他说新版说明标出位置以后，改一份材料的时间从两小时降到四十分钟。</p>
+            <div class="card-foot"><span>第 25 期起</span><span>补正 6 次</span></div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="辅助导航与其他线索">
+      <nav class="side-card" aria-labelledby="side-nav-title">
+        <h2 id="side-nav-title">板块导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#picked">本期精选</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">频道入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">投稿体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#reviews">投稿者说</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#rank">赛段榜单</a></li>
+          <li><a href="/#voices">创作者证言</a></li>
+        </ul>
+      </nav>
+      <div class="side-card">
+        <h2>本期关键时间</h2>
+        <ul class="notice-list">
+          <li><time datetime="2026-11-08">11-08</time>命题开闸，评审表同步</li>
+          <li><time datetime="2026-11-10">11-10</time>首轮退稿反馈下发</li>
+          <li><time datetime="2026-11-11">11-11</time>投稿窗口关闭</li>
+          <li><time datetime="2026-11-12">11-12</time>待定池补正截止</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h2>材料自查三项</h2>
+        <ul class="notice-list">
+          <li>原始文件是否还在原设备</li>
+          <li>知情人电话能否当场回拨</li>
+          <li>时间线是否逐条标注来源</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#22375c"/>
+            <path d="M15 19h34v7H15z" fill="#f5b93c"/>
+            <path d="M15 31h21v5H15z" fill="#e8dfc9"/>
+            <path d="M15 41h27v5H15z" fill="#e8dfc9"/>
+            <circle cx="47" cy="45" r="7.5" fill="none" stroke="#f5b93c" stroke-width="4"/>
+          </svg>
+          <strong>每日爆料大赛入口</strong>
+        </div>
+        <p>把线索写成核验组能核的材料。命题每期更换，投稿编号长期可查。</p>
+        <p>示例数据说明：赛段数量、投稿编号、评分与评论均为演示内容，用于展示页面结构；品牌身份、联系方式与授权信息以实际运营方公布为准。</p>
+      </div>
+      <div>
+        <h3>赛段频道</h3>
+        <ul>
+          <li><a href="/#channels">城中村改造补偿公示</a></li>
+          <li><a href="/#channels">县域医院药品集采</a></li>
+          <li><a href="/#channels">社区食堂承包招标</a></li>
+          <li><a href="/#channels">校门口的收费</a></li>
+          <li><a href="/#channels">夜班通勤观察</a></li>
+          <li><a href="/#channels">自由命题待定池</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与入口</h3>
+        <ul>
+          <li><a href="/#guide">投稿材料清单</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#deep">退稿条款对照</a></li>
+          <li><a href="/#rank">评分拆分榜单</a></li>
+          <li><a href="/#reviews">投稿者留言</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>规则与公示</h3>
+        <ul>
+          <li><a href="/#overview">评审分工说明</a></li>
+          <li><a href="/#latest">规则更新记录</a></li>
+          <li><a href="/#news">公示核验记录</a></li>
+          <li><a href="/#related">按场景找入口</a></li>
+          <li><a href="/#voices">长期投稿人方法</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>正文可核对更新项：11 月 8 日自由命题名额调整、11 月 7 日退稿说明模板改版、11 月 6 日核验回拨留痕。</span>
+      <span>© 2026 示例站点 · 内容仅作结构演示</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var headerZone = document.querySelector('.sticky-zone');
+
+  function syncHeaderHeight(){
+    if(!headerZone) return;
+    var h = headerZone.getBoundingClientRect().height;
+    document.documentElement.style.setProperty('--header-h', Math.round(h) + 'px');
+  }
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight);
+  window.addEventListener('load', syncHeaderHeight);
+
+  // 移动端菜单
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width: 760px)').matches){
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 本地搜索
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var feedback = document.getElementById('searchFeedback');
+  var searchables = Array.prototype.slice.call(
+    document.querySelectorAll('.panel, .side-card, .card, .tight-list li, details, .comment, .channel-index li, .steps li, .tag-cloud li')
+  );
+  if(form && input){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = input.value.trim().toLowerCase();
+      if(!q){
+        searchables.forEach(function(el){ el.classList.remove('is-hidden'); });
+        feedback.textContent = '';
+        feedback.classList.remove('is-open');
+        return;
+      }
+      var hit = 0;
+      searchables.forEach(function(el){
+        var text = (el.textContent || '').toLowerCase();
+        var ok = text.indexOf(q) !== -1;
+        el.classList.toggle('is-hidden', !ok);
+        if(ok) hit++;
+      });
+      if(hit === 0){
+        searchables.forEach(function(el){ el.classList.remove('is-hidden'); });
+        feedback.textContent = '没有找到与「' + input.value.trim() + '」相关的赛道或条目，可试试“退稿”“编号”“集采”等短词。';
+        feedback.classList.add('is-open');
+      }else{
+        feedback.textContent = '找到 ' + hit + ' 处匹配，已隐藏其余内容。';
+        feedback.classList.add('is-open');
+      }
+    });
+    input.addEventListener('input', function(){
+      if(input.value.trim() === ''){
+        searchables.forEach(function(el){ el.classList.remove('is-hidden'); });
+        feedback.textContent = '';
+        feedback.classList.remove('is-open');
+      }
+    });
+  }
+
+  // 侧栏滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  function highlight(){
+    if(!sections.length) return;
+    var offset = (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h'),10) || 112) + 60;
+    var current = null;
+    for(var i=0;i<sections.length;i++){
+      var rect = sections[i].getBoundingClientRect();
+      if(rect.top - offset <= 0) current = sections[i].id;
+    }
+    sideLinks.forEach(function(a){
+      var active = a.getAttribute('href') === '/#' + current;
+      a.classList.toggle('is-active', active);
+      if(active){ a.setAttribute('aria-current','true'); } else { a.removeAttribute('aria-current'); }
+    });
+    var topNavLinks = document.querySelectorAll('.nav-list a');
+    topNavLinks.forEach(function(a){
+      var active = a.getAttribute('href') === '/#' + current;
+      if(active){ a.setAttribute('aria-current','true'); } else { a.removeAttribute('aria-current'); }
+    });
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){ highlight(); ticking = false; });
+      ticking = true;
+    }
+  }, {passive:true});
+  highlight();
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
+    });
+    window.addEventListener('scroll', function(){
+      toTop.classList.toggle('is-visible', window.scrollY > 600);
+    }, {passive:true});
+  }
+})();
+</script>
+</body>
+                </html>
